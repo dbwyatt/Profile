@@ -1,25 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="/PersonalProfile/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="/PersonalProfile/css/index.css" />
 	<title>Daniel Wyatt</title>
 </head>
 <body>
 	<div id="main-container">
-		<div id="profile-content">
-			<div id="me" data-page="#home-page" data-target="page"></div>
-			<div id="profile">
-				<h1><span>Daniel</span> <span style="color: darkorange;">Wyatt</span></h1>
-				<!-- <button id="connect">Connect with me</button> -->
-				<a target="_blank" href="https://www.linkedin.com/in/danielbwyatt"><img class="social" src="/PersonalProfile/img/linkedin.png" /></a>
-				<a target="_blank" href="https://www.facebook.com/daniel.wyatt.180"><img class="social" src="/PersonalProfile/img/facebook.png" /></a>
-				<a target="_blank" href="https://plus.google.com/u/0/+DanielWyattB/posts"><img class="social" src="/PersonalProfile/img/google-plus.png" /></a>
-				<a target="_blank" href=""><img class="social" src="/PersonalProfile/img/twitter.png" /></a>
-				<a target="_blank" href="https://www.github.com/dbwyatt"><img class="social" src="/PersonalProfile/img/github-pic.png" /></a>
-			</div>
-		</div>
-
 		<div class="navbar-inverse margin">
 			<nav class="navbar navbar-inverse">
 				<div class="container-fluid">
@@ -31,69 +18,94 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#" data-page="#home-page" data-target="page"><img src="/PersonalProfile/img/logo.png" /></a>
+						<!-- <a class="navbar-brand" href="#" data-page="#home-page" data-target="page"><img src="/PersonalProfile/img/logo.png" /></a> -->
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-left">
+							<li>
+					        	<a href="#home" data-page="#home" data-target="page"><span class="glyphicon glyphicon-home"></span></a>
+					        </li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
 									<li><a target="_blank" href="http://www.clsiart.com">CLSI Art</a></li>
 									<li><a target="_blank" href="http://www.candorcontracts.com">Candor Contracts</a></li>
 									<li class="divider"></li>
-									<li><a href="#project-page" data-page="#project-page" data-target="page">All projects</a></li>
+									<li><a href="#projects" data-page="#project-page" data-target="page">All projects</a></li>
 								</ul>
 							</li>
-							<li><a href="#endorsements-page" data-page="#endorsements-page" data-target="page">Endorsements</a></li>
+							<li><a href="#endorsements" data-page="#endorsements-page" data-target="page">Endorsements</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#about-page" data-page="#about-page" data-target="page">About Me</a></li>
-							<li><a href="#contact-page" data-page="#contact-page" data-target="page">Contact</a></li>
+							<li><a href="#about" data-page="#about-page" data-target="page">About Me</a></li>
+							<li><a href="#contact" data-page="#contact-page" data-target="page">Contact</a></li>
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
 			</nav>
 		</div>
 
+		<div id="profile-content">
+			<a href="#home"><div id="me" data-page="#home-page" data-target="page"></div></a>
+			<div id="profile">
+				<h1><span>Daniel</span> <span style="color: darkorange;">Wyatt</span></h1>
+				<!-- <button id="connect">Connect with me</button> -->
+				<a target="_blank" href="https://www.linkedin.com/in/danielbwyatt"><img class="social" src="/PersonalProfile/img/linkedin.png" /></a>
+				<a target="_blank" href="https://www.facebook.com/daniel.wyatt.180"><img class="social" src="/PersonalProfile/img/facebook.png" /></a>
+				<a target="_blank" href="https://plus.google.com/u/0/+DanielWyattB/posts"><img class="social" src="/PersonalProfile/img/google-plus.png" /></a>
+				<a target="_blank" href="https://twitter.com/dbwyatt23"><img class="social" src="/PersonalProfile/img/twitter.png" /></a>
+				<a target="_blank" href="https://www.github.com/dbwyatt"><img class="social" src="/PersonalProfile/img/github-pic.png" /></a>
+			</div>
+		</div>
+
 		<div id="page-content">
 
-			<div id="home-page" class="page current-page">
+			<div id="home" class="page current-page">
+				<h2 class="page-header">Home<br><small>A nice place to be</small></h2>
 				<p>
-					Web Developer and Software Engineer
+					Thanks for visiting my page! This is a site to house my projects and be the guinea pig for my creative outlet. From time to time this site may get switched up a bit with new things added periodically. I hope you enjoy your visit.
 				</p>
 			</div>
 
-			<div id="endorsements-page" class="page">
+			<div id="endorsements" class="page">
+				<h2 class="page-header">Endorsements<br><small>A list of projects I have worked on</small></h2>
 				<p>Endorsement</p>
 			</div>
 
-			<div id="about-page" class="page">
-				<p>About</p>
+			<div id="about" class="page">
+				<h2 class="page-header">About Me<br><small>A list of projects I have worked on</small></h2>
+				<p>
+					I'm an avid Web Developer and Software Engineer!
+				</p>
 			</div>
 
-			<div id="contact-page" class="page">
+			<div id="contact" class="page">
+				<h2 class="page-header">Contact Me<br><small>A list of projects I have worked on</small></h2>
 				<p>Contact</p>
 			</div>
 
-			<div id="project-page" class="page">
-				<div class="project">
-					<div class="project-heading">CLSI Art - <a target="_blank" href="http://www.clsiart.com" class="project-link">http://www.clsiart.com</a></div>
-					<div class="project-description">
-						<p>
-							This is a fun website I created as a graphic design portfolio for CLSI Art. It allows for showcasing work CLSI Art has done. One of the cool things about this site is that I built a content management page that allows the user to manage their own content specific to their needs. They can upload new work samples, manage the home page carousel, and even change the background, amongst other things.
-						</p>
-					</div>
-				</div>
-				<div class="project">
-					<div class="project-heading">Candor Contracts - <a target="_blank" href="http://www.candorcontracts.com" class="project-link">http://www.candorcontracts.com</a></div>
-					<div class="project-description">
-						<p>
-							Hopefully this will get to change college students lives. I've teamed up with several different guys in an attempt to make the best appartment contract management site available. There is nothing quite like this and we're hoping this greatly eases the pains of buying and selling contracts.
-						</p>
-					</div>
-				</div>
+			<div id="projects" class="page">
+				<h2 class="page-header">Projects<br><small>All made with a little TLC</small></h2>
+				<ul>	
+					<li class="project">
+						<div class="project-heading">CLSI Art - <a target="_blank" href="http://www.clsiart.com" class="project-link">http://www.clsiart.com</a></div>
+						<div class="project-description">
+							<p>
+								This is a fun website I created as a graphic design portfolio for CLSI Art. It allows for showcasing work CLSI Art has done. One of the cool things about this site is that I built a content management page that allows the user to manage their own content specific to their needs. They can upload new work samples, manage the home page carousel, and even change the background, amongst other things.
+							</p>
+						</div>
+					</li>
+					<li class="project">
+						<div class="project-heading">Candor Contracts - <a target="_blank" href="http://www.candorcontracts.com" class="project-link">http://www.candorcontracts.com</a></div>
+						<div class="project-description">
+							<p>
+								Hopefully this will get to change college students lives. I've teamed up with several different guys in an attempt to make the best appartment contract management site available. There is nothing quite like this and we're hoping this greatly eases the pains of buying and selling contracts.
+							</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 
 		</div>
@@ -111,8 +123,8 @@
 	</footer>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="/PersonalProfile/js/jquery-2.1.3.min.js"></script>
+<script src="/PersonalProfile/js/bootstrap.min.js"></script>
 <script src="/PersonalProfile/js/index.js"></script>
 
 </html>
