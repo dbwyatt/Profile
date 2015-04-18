@@ -1,5 +1,13 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
+// variables
+@accent-color: darkorange;
+
+// possible background colors
+// #193857
+// #26486B
+// #34495e
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -14,8 +22,8 @@ body {
 
 h1 {
 	color: white;
-	font-size: 61px;
-	font-weight: 600;
+	font-size: 71px;
+	font-weight: 700;
 	margin-top: 0;
 	margin-bottom: 15px;
 }
@@ -28,15 +36,16 @@ h2 {
 
 .page-header {
 	padding: 40px 0 20px;
-  	margin: 0;
+  	margin: 0 15px 0;
 
   	small {
-		color: darkorange;
+		color: @accent-color;
 	}
 }
 
 ul {
 	padding: 0;
+	text-align: center;
 }
 
 #main-container {
@@ -56,13 +65,13 @@ ul {
 	background-image: url("/PersonalProfile/img/daniel.jpg");
 	background-size: cover;
 	background-position: center;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	border-radius: 100%;
 	position: relative;
 	margin: 0 auto;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	/*border: solid 5px white;*/
 	box-shadow: 0px 0px 20px -5px black;
 	cursor: pointer;
@@ -71,8 +80,12 @@ ul {
 #profile {
 	padding: 35px 0px 35px 70px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: left;
+
+	span:last-child {
+		color: @accent-color;
+	}
 }
 
 .social {
@@ -81,7 +94,7 @@ ul {
 	border-radius: 100%;
 }
 .social:hover {
-	background-color: darkorange;
+	background-color: @accent-color;
 }
 /*#connect {
 	width: 180px;
@@ -149,8 +162,8 @@ ul {
 #page-content {
 	/*background-color: white;*/
 	min-height: 50%;
-	background-color: rgba(0,0,0, .8);
-	box-shadow: inset 0px 4px 0px 0px darkorange;
+	background-color: rgba(0,0,0, .6);
+	box-shadow: inset 0px 4px 0px 0px @accent-color;
 	text-align: center;
 	/*padding: 0 15%;*/
 }
@@ -161,11 +174,12 @@ ul {
 	text-align: left;
 	position: relative;
 	margin: 0 auto;
-}
-.page > p {
-	display: inline-block;
-	padding: 20px;
-	color: white;
+
+	> p {
+		display: inline-block;
+		padding: 20px;
+		color: white;
+	}
 }
 
 #home {
@@ -195,39 +209,78 @@ ul {
 		}
 	}
 }
+
 .project {
 	position: relative;
-	max-width: 400px;
-	min-width: 250px;
-	margin: 50px 20px;
-	background: white;
-	box-shadow: 0px 0px 0px 1px lightgrey;
-	border-radius: 3px;
 	display: inline-block;
-	text-align: left;
 	vertical-align: top;
-}
-.project-image {
+	text-align: center;
+	margin: 0 20px 50px;
 
-}
-.project-heading {
-	padding: 10px;
-	box-shadow: 0px 1px 0px 0px lightgrey;
-	background-color: rgba(80,80,80, .2);
-	font-weight: bold;
-	display: block;
-}
-.project-link {
-	color: darkorange;
-	word-break: break-all;
-}
-.project-description {
-	display: block;
-	padding: 20px;
-}
-.project-description p {
-	margin: 0;
-	font-size: 15px;
+	&:hover {
+
+		.project-image {
+			box-shadow: 0px 0px 20px 0 black;	
+			transform: translate(0, 40px);
+		}
+
+		.project-description-container {
+			transform: translate(0, -10px);
+		}
+	}
+	
+	.project-image {
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		// border: solid 3px white;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: relative;
+		margin: 0 auto;
+		background-color: white;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		transition: transform .5s ease, box-shadow .5s ease;
+		cursor: pointer;
+		z-index: 1;
+	}
+	
+	.project-description-container {
+		display: block;
+		max-width: 400px;
+		min-width: 250px;
+		background: white;
+		box-shadow: 0px 0px 0px 1px lightgrey;
+		// border-radius: 3px;
+		text-align: left;
+		transition: transform .5s ease, box-shadow .5s ease;
+
+		.project-heading {
+			padding: 30px;
+			box-shadow: 0px 1px 0px 0px lightgrey;
+			background-color: rgba(80,80,80, .2);
+			font-weight: bold;
+			display: block;
+				
+				.project-link {
+					color: @accent-color;
+					word-break: break-all;
+					font-size: 14px;
+				}
+		}
+
+		.project-description {
+			display: block;
+			padding: 20px;
+			
+			p {
+				margin: 0;
+				font-size: 15px;
+			}
+		}
+	}
 }
 
 

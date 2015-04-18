@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta name="description" content="Profile site for Daniel Wyatt.">
+	<meta name="keywords" content="Daniel, Wyatt, Daniel Wyatt, profile, profile site, web, web developer, software, software engineer">
+	<meta name="author" content="Daniel Wyatt">
+
 	<link type="text/css" href="/PersonalProfile/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="/PersonalProfile/css/index.css" />
+	<link type="image/icon" rel="icon" href="/PersonalProfile/img/daniel.jpg" />
 	<title>Daniel Wyatt</title>
 </head>
 <body>
@@ -32,6 +38,7 @@
 								<ul class="dropdown-menu" role="menu">
 									<li><a target="_blank" href="http://www.clsiart.com">CLSI Art</a></li>
 									<li><a target="_blank" href="http://www.candorcontracts.com">Candor Contracts</a></li>
+									<li><a target="_blank" href="http://www.ramplearning.com">RAMP</a></li>
 									<li class="divider"></li>
 									<li><a href="#projects" data-page="#project-page" data-target="page">All projects</a></li>
 								</ul>
@@ -50,7 +57,7 @@
 		<div id="profile-content">
 			<a href="#home"><div id="me" data-page="#home-page" data-target="page"></div></a>
 			<div id="profile">
-				<h1><span>Daniel</span> <span style="color: darkorange;">Wyatt</span></h1>
+				<h1><span>Daniel</span> <span>Wyatt</span></h1>
 				<!-- <button id="connect">Connect with me</button> -->
 				<a target="_blank" href="https://www.linkedin.com/in/danielbwyatt"><img class="social" src="/PersonalProfile/img/linkedin.png" /></a>
 				<a target="_blank" href="https://www.facebook.com/daniel.wyatt.180"><img class="social" src="/PersonalProfile/img/facebook.png" /></a>
@@ -61,49 +68,91 @@
 		</div>
 
 		<div id="page-content">
-
+			<!-- Home -->
 			<div id="home" class="page current-page">
 				<h2 class="page-header">Home<br><small>A nice place to be</small></h2>
 				<p>
 					Thanks for visiting my page! This is a site to house my projects and be the guinea pig for my creative outlet. From time to time this site may get switched up a bit with new things added periodically. I hope you enjoy your visit.
+					<br><br>
+					All my social links are above, under my name. Feel free to connect with me!
 				</p>
 			</div>
 
+			<!-- Endorsements -->
 			<div id="endorsements" class="page">
-				<h2 class="page-header">Endorsements<br><small>A list of projects I have worked on</small></h2>
+				<h2 class="page-header">Endorsements<br><small>If I've lived up to your expectations share it!</small></h2>
 				<p>Endorsement</p>
 			</div>
 
+			<!-- About -->
 			<div id="about" class="page">
 				<h2 class="page-header">About Me<br><small>A list of projects I have worked on</small></h2>
-				<p>
+				<p itemprop="description">
 					I'm an avid Web Developer and Software Engineer!
 				</p>
 			</div>
 
+			<!-- Contact -->
 			<div id="contact" class="page">
-				<h2 class="page-header">Contact Me<br><small>A list of projects I have worked on</small></h2>
-				<p>Contact</p>
+				<h2 class="page-header">Contact Me<br><small>I don't bite</small></h2>
+				<p>
+					On a case-by-case basis I'm available for contract work. This could range from building a website to web consulting. Shoot me a message and we'll see what we can work out.
+				</p>
 			</div>
 
+			<!-- Projects -->
 			<div id="projects" class="page">
-				<h2 class="page-header">Projects<br><small>All made with a little TLC</small></h2>
+				<h2 class="page-header">Projects<br><small>All made with some TLC</small></h2>
 				<ul>	
 					<li class="project">
-						<div class="project-heading">CLSI Art - <a target="_blank" href="http://www.clsiart.com" class="project-link">http://www.clsiart.com</a></div>
-						<div class="project-description">
-							<p>
-								This is a fun website I created as a graphic design portfolio for CLSI Art. It allows for showcasing work CLSI Art has done. One of the cool things about this site is that I built a content management page that allows the user to manage their own content specific to their needs. They can upload new work samples, manage the home page carousel, and even change the background, amongst other things.
-							</p>
-						</div>
+						<a target="_blank" href="http://www.clsiart.com">
+							<div class="project-image" style="background-image: url('/PersonalProfile/img/clsi.png')"></div>
+						</a>
+						<div class="project-description-container">
+							<div class="project-heading">
+								<h3>CLSI Art</h3> 
+								<a target="_blank" href="http://www.clsiart.com" class="project-link">www.clsiart.com</a>
+							</div>
+							<div class="project-description">
+								<p>
+									This is a fun website I created as a graphic design portfolio for CLSI Art. It allows for showcasing work CLSI Art has done. One of the cool things about this site is that I built a content management page that allows the user to manage their own content specific to their needs. They can upload new work samples, manage the home page carousel, and even change the background, amongst other things.
+								</p>
+							</div>
+						</div>	
 					</li>
+
 					<li class="project">
-						<div class="project-heading">Candor Contracts - <a target="_blank" href="http://www.candorcontracts.com" class="project-link">http://www.candorcontracts.com</a></div>
-						<div class="project-description">
-							<p>
-								Hopefully this will get to change college students lives. I've teamed up with several different guys in an attempt to make the best appartment contract management site available. There is nothing quite like this and we're hoping this greatly eases the pains of buying and selling contracts.
-							</p>
-						</div>
+						<a target="_blank" href="http://www.candorcontracts.com">
+							<div class="project-image" style="background-image: url('/PersonalProfile/img/Candor-txt.png')"></div>
+						</a>
+						<div class="project-description-container">
+							<div class="project-heading">
+								<h3>Candor Contracts</h3> 
+								<a target="_blank" href="http://www.candorcontracts.com" class="project-link">www.candorcontracts.com</a>
+							</div>
+							<div class="project-description">
+								<p>
+									Hopefully this will get to change college students lives. I've teamed up with several different guys in an attempt to make the best appartment contract management site available. There is nothing quite like this and we're hoping this greatly eases the pains of buying and selling contracts.
+								</p>
+							</div>
+						</div>	
+					</li>
+					
+					<li class="project">
+						<a target="_blank" href="http://www.ramplearning.com">
+							<div class="project-image" style="background-image: url('/PersonalProfile/img/ramp.png')"></div>
+						</a>
+						<div class="project-description-container">
+							<div class="project-heading">
+								<h3>RAMP</h3> 
+								<a target="_blank" href="http://www.ramplearning.com" class="project-link">www.ramplearning.com</a>
+							</div>
+							<div class="project-description">
+								<p>
+									RAMP is a tool designed to assist teachers in making decisions about their students. It analyzes the students' data and makes suggestions based on their current progress.
+								</p>
+							</div>
+						</div>	
 					</li>
 				</ul>
 			</div>
