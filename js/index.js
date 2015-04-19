@@ -21,6 +21,13 @@ $(function() {
 		}
 	}); //hashchange
 
+	function pageChange(page) {
+		console.log(page);
+		$('.current-page').removeClass('current-page').fadeOut("fast", function() {
+			$(page).fadeIn().addClass('current-page');
+		});
+	}
+
 	// $('[data-target="page"]').on('click', function() {
 	// 	var $this = $(this);
 	// 	var current_page = "#" + $('.current-page').attr('id');
@@ -29,13 +36,6 @@ $(function() {
 	// 		pageChange($this.data('page'));
 	// 	}
 	// }); // page change
-
-	function pageChange(page) {
-		console.log(page);
-		$('.current-page').removeClass('current-page').fadeOut("fast", function() {
-			$(page).fadeIn().addClass('current-page');
-		});
-	}
 
 	// $(window).off("page_load").on("page_load", function(event) {
 	// 	var hash = window.location.hash;
