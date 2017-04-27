@@ -1,0 +1,6 @@
+var endorsements = [
+	{
+		'name': 'Daniel Wyatt',
+		'endorsement': 'He is fantastic'
+	}
+]

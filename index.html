@@ -9,6 +9,7 @@
 	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/index.css" />
 	<link type="image/icon" rel="icon" href="img/daniel.jpg" />
+
 	<title>Daniel Wyatt</title>
 </head>
 <body>
@@ -83,41 +84,44 @@
 			<!-- Endorsements -->
 			<div id="endorsements" class="page">
 				<h2 class="page-header">Endorsements<br><small>If I've lived up to your expectations share it!</small></h2>
-				<p>Endorsement</p>
+				<p id="endorsements-container">Coming Soon!</p>
 			</div>
 
 			<!-- About -->
 			<div id="about" class="page">
 				<h2 class="page-header">About Me<br><small>Programming is cool? Programming is awesome!</small></h2>
 				<p itemprop="description">
-					I'm an avid Web Developer and Software Engineer!
+					I'm an avid Software Engineer! Been neck deep in web development for the last <span id="number-of-years"></span> years.
 				</p>
 			</div>
 
 			<!-- Contact -->
 			<div id="contact" class="page">
-				<h2 class="page-header">Contact Me<br><small>I don't bite</small></h2>
+				<h2 class="page-header">Contact Me<br><small>I would love to connect!</small></h2>
 				<p>
 					On a case-by-case basis I'm available for contract work. This could range from building a website to web consulting. Shoot me a message and we'll see what we can work out.
+				</p>
+				<p>
+					Email me at <a href="mailto:daniel@danielwyattweb.com">daniel@danielwyattweb.com</a> or connect with me on LinkedIn above
 				</p>
 			</div>
 
 			<!-- Projects -->
 			<div id="projects" class="page">
 				<h2 class="page-header">Projects<br><small>All made with some TLC</small></h2>
-				<ul>	
+				<ul>
 					<li class="project">
-						<a target="_blank" href="http://www.clsiart.com">
-							<div class="project-image" style="background-image: url('img/clsi.png')"></div>
+						<a target="_blank" href="https://www.qualtrics.com/">
+							<div class="project-image" style="background-image: url('img/qualtrics.png')"></div>
 						</a>
 						<div class="project-description-container">
 							<div class="project-heading">
-								<h3>CLSI Art</h3> 
-								<a target="_blank" href="http://www.clsiart.com" class="project-link">www.clsiart.com</a>
+								<h3>Qualtrics</h3> 
+								<a target="_blank" href="https://www.qualtrics.com/" class="project-link">www.qualtrics.com</a>
 							</div>
 							<div class="project-description">
 								<p>
-									This is a fun website I created as a graphic design portfolio for CLSI Art. It allows for showcasing work CLSI Art has done. One of the cool things about this site is that I built a content management page that allows the user to manage their own content specific to their needs. They can upload new work samples, manage the home page carousel, and even change the background, amongst other things.
+									I currently work at Qualtrics, the platform for all experience management. I work as a full-stack developer creating custom solutions on top of our product.
 								</p>
 							</div>
 						</div>	
@@ -134,7 +138,41 @@
 							</div>
 							<div class="project-description">
 								<p>
-									Hopefully this will get to change college students lives. I've teamed up with several different guys in an attempt to make the best appartment contract management site available. There is nothing quite like this and we're hoping this greatly eases the pains of buying and selling contracts.
+									Hopefully this will get to change college students lives. I've teamed up with several different individuals in an attempt to make the best appartment contract management site available. I am lead development on this project. There is nothing quite like this and we're hoping this greatly eases the pains of buying and selling contracts.
+								</p>
+							</div>
+						</div>	
+					</li>
+
+					<li class="project">
+						<a target="_blank" href="http://www.gstrackme.us/">
+							<div class="project-image" style="background-image: url('img/gstrackme.png')"></div>
+						</a>
+						<div class="project-description-container">
+							<div class="project-heading">
+								<h3>GS Trackme</h3> 
+								<a target="_blank" href="http://www.gstrackme.us/" class="project-link">www.gstrackme.us</a>
+							</div>
+							<div class="project-description">
+								<p>
+									GS Trackme is a vehicle and mobile tracking service. I contracted with them to provide training on PHP and JavaScript for building their internal operations system. The system capabilities ranged from managing client information to an internal chat application.
+								</p>
+							</div>
+						</div>	
+					</li>
+
+					<li class="project">
+						<a target="_blank" href="http://www.clsiart.com">
+							<div class="project-image" style="background-image: url('img/clsi.png')"></div>
+						</a>
+						<div class="project-description-container">
+							<div class="project-heading">
+								<h3>CLSI Art</h3> 
+								<a target="_blank" href="http://www.clsiart.com" class="project-link">www.clsiart.com</a>
+							</div>
+							<div class="project-description">
+								<p>
+									This is a fun website I created as a graphic design portfolio for CLSI Art. It allows for showcasing work CLSI Art has done. One of the cool things about this site is that I built a content management page that allows the user to manage their own content specific to their needs. They can upload new work samples, manage the home page carousel, and even change the background, amongst other things.
 								</p>
 							</div>
 						</div>	
@@ -147,7 +185,7 @@
 						<div class="project-description-container">
 							<div class="project-heading">
 								<h3>RAMP</h3> 
-								<a target="_blank" href="http://www.ramplearning.com" class="project-link">www.ramplearning.com</a>
+								<a target="_blank" href="http://elr.byu.edu" class="project-link">elr.byu.edu</a>
 							</div>
 							<div class="project-description">
 								<p>
@@ -169,13 +207,13 @@
 	<footer>
 		<div id="footer-container">
 			Copyright &copy; <span id="current-year"></span> Daniel Wyatt
-			<script>document.getElementById('current-year').innerHTML = new Date().getFullYear()</script> 
 		</div>
 	</footer>
 </body>
 
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="endorsements.json"></script>
 <script src="js/index.js"></script>
 
 </html>
