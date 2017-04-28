@@ -22,11 +22,20 @@ $(function() {
 	}); //hashchange
 
 	function pageChange(page) {
-		console.log(page);
 		$('.current-page').removeClass('current-page').fadeOut("fast", function() {
 			$(page).fadeIn().addClass('current-page');
 		});
 	}
+
+
+	// for (var i in window.endorsements) {
+	// 	var endorsement = window.endorsements[i],
+	// 		template = '<blockquote class="endorsement">' + endorsement.endorsement + '<span class="author">' + endorsement.name + '</span></blockquote>';
+	// 	document.getElementById('endorsements-container').innerHTML += template;
+	// }
+
+	document.getElementById('current-year').innerHTML = new Date().getFullYear();
+	document.getElementById('number-of-years').innerHTML = new Date().getFullYear() - 2013;
 
 	// $('[data-target="page"]').on('click', function() {
 	// 	var $this = $(this);

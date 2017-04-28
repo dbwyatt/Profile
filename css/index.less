@@ -2,6 +2,8 @@
 
 // variables
 @accent-color: darkorange;
+@background: rgb(42, 68, 94);
+@page-color: rgba(0,0,0, .6);
 
 // possible background colors
 // #193857
@@ -17,7 +19,7 @@ html, body {
 
 body {
 	font-family: 'Open Sans' !important;
-	background-color: rgb(42, 68, 94);
+	background-color: @background;
 }
 
 h1 {
@@ -162,7 +164,7 @@ ul {
 #page-content {
 	/*background-color: white;*/
 	min-height: 50%;
-	background-color: rgba(0,0,0, .6);
+	background-color: @page-color;
 	box-shadow: inset 0px 4px 0px 0px @accent-color;
 	text-align: center;
 	/*padding: 0 15%;*/
@@ -188,6 +190,10 @@ ul {
 
 #endorsements {
 	display: none;
+
+	#endorsements-container {
+		display: block;
+	}
 }
 
 #about {
@@ -291,6 +297,85 @@ ul {
 }
 
 
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 25px 30px 25px 55px;
+  margin: 0 0 65px;
+  position: relative;
+  
+  /*Font*/
+  // font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  
+  /*Box Shadow - (Optional)*/
+  // -moz-box-shadow: 2px 2px 15px #ccc;
+  // -webkit-box-shadow: 2px 2px 15px #ccc;
+  // box-shadow: 2px 2px 15px #ccc;
+
+  .author {
+    position: absolute;
+    right: 0;
+    top: 105%;
+    font-size: 1.5em;
+
+  	&::before {
+  		content: "";
+  		width: 40px;
+	    height: 2px;
+	    background-color: #c76c0c;
+	    opacity: .7;
+	    position: absolute;
+	    right: 100%;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto 15px;
+  	}
+  }
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
 
 
 
